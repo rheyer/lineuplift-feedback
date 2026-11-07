@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open LineupLift
+    url: https://lineuplift.com
+    about: Use the app to reproduce the issue before reporting it.
