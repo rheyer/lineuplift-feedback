@@ -1,0 +1,56 @@
+name: Bug report
+description: Report something that is broken or behaves unexpectedly.
+title: "[Bug] "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe one bug per issue. Search existing issues first.
+        **Everything here is public.** Do not attach league snapshots, raw reports,
+        ESPN cookies, tokens, private league links or IDs, or manager/team names.
+        Redact screenshots and error text. Use the synthetic example when possible.
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the problem and where in the app it occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps. Mention whether it also happens with the synthetic example, if you tried it.
+      placeholder: |
+        1. Open LineupLift
+        2. ...
+        3. The problem occurs
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      description: Include the browser version and operating system if known. For CLI issues, include the ftf version and operating system instead.
+      placeholder: Safari on iPhone, Chrome on Windows, or ftf on macOS
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional details or redacted screenshots
+      description: Optional. Include frequency, approximate date/time, settings, or a short redacted error message. Do not paste raw console logs or league files.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have checked that this issue and any attachments contain no credentials or private league information.
+          required: true
